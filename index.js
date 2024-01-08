@@ -4,9 +4,10 @@
 //setting const to utilize fs promises api.
 //this will support writing/reading of files and easier validation of data
 const { readFile, writeFile} = require('fs/promises');
+const shapeCreator = require('./lib/data/shapeCreator')
 
 
 //brainstorm notes.
-//we need to give user prompt for desired shape,
-// validate that prompt result,
-// then pass it into some sort of functionality that will determine the making of a triangle, circle, or square class.
+//I have a way to handle shapePrompt user input
+//now I need to create the actual terminal prompt for to get shapePrompt data back
+//once prompt created, need to tranfer that data into shapePrompt
