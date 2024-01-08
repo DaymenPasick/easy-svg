@@ -71,14 +71,18 @@ const init = () => {
     
     console.log(data);
 
-    //will make sure textPrompt is between 1-3 letters & CAPS all letters
+    //will make sure textPrompt is between 1-3 letters, only contains letters & will CAPS response
     const validatedTextResponse = validateTextResponse(data.textPrompt)
     console.log("Shape text will be: " + validatedTextResponse);
+
+    //will validate shapePrompt for proper shape choice, and return shape response in lowercase letters
+    
+
+
+
+
  })
 }
 
 init()
 
-module.exports = {
-    // init
-}
