@@ -91,13 +91,22 @@ const init = () => {
     console.log("Your text color will be: " + validatedTextColor);
 
 
-    
+
     //will create new shape class based of response. Class will be made from
     //shape classes within shapeCreator.js
     const generatedShape = createSelectedShape(validatedShapeResponse)
     console.log(generatedShape);
+
  })
 }
+
+//will take all of the validated terminal prompt responses and create a logo
+//for rendering
+function createLogo(generatedShape, validatedShapeResponse, validatedShapeColor,
+                    validatedTextResponse, validatedTextColor) {
+
+}
+
 
 init()
 
