@@ -72,13 +72,6 @@ const init = () => {
  prompt(questions)
  .then(data => {
 
-        //writeToFile() will initiate function responsible for handling data after
-        //its been validated and processed in the steps below
-        writeToFile("logo.svg", populatedShape)
-
-
-
-
     //will validate shapePrompt for proper shape choice, and return shape response in lowercase letters
     const validatedShapeResponse = validateShapeResponse(data.shapePrompt)
 
@@ -132,11 +125,11 @@ const init = () => {
     }
     
 
-
-
+    //will call function
+    writeToFile("logo.svg", populatedShape)
  })
 }
 
-
+//will start the svg logo creator
 init()
 
