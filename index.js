@@ -7,13 +7,13 @@ const { readFile, writeFile} = require('fs/promises');
 const inquirer = require('inquirer')
 const shapeCreator = require('./lib/data/shapeCreator')
 
-const Shape = shapeCreator.Shape
+// const Shape = shapeCreator.Shape
 
-const renderShapeResponse = shapeCreator.renderShapeResponse
+// const renderShapeResponse = shapeCreator.renderShapeResponse
 
-const triangle = renderShapeResponse('triangle')
+// const triangle = renderShapeResponse('triangle')
 
-console.log(triangle);
+// console.log(triangle);
 
 
 //brainstorm notes.
@@ -80,4 +80,8 @@ const init = () => {
  prompt(questions)
 }
 
-init()
+// init()
+
+module.exports = {
+    init
+}
