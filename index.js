@@ -106,29 +106,26 @@ const init = () => {
 
    console.log(populatedShape);
 
-   //need to make code that will make .SVGfile
-   //need to make code that will take populatedShape and populate it into svg logo
+   //function will take validated prompt answers and create a logo.svg file
     function writeToFile(filename, populatedShape){
 
         const genSVG = generateSvgLogo(populatedShape)
 
+        //will create an output directory if one doesn't exist
         if(!fs.existsSync('./output')) {
             fs.mkdirSync('./output')
         }
 
-
-
+        //will use data from genSVG to write a logo.svg file into an output directory
         fs.writeFileSync('./output/logo.svg', genSVG, err =>{
             if(err){
                 console.error(err);
             }
-
         })
-
     }
     
 
-
+    //will call function
     writeToFile("logo.svg", populatedShape)
 
  })
