@@ -45,8 +45,8 @@ const questions = [
     //prompt for shapeColor
     {
     
-        type: 'rawlist',
-        message: 'Please type a color or paste color RBG code',
+        type: 'input',
+        message: 'Please type a color or paste an RBG code for your shape',
         name: 'shapeColorPrompt',
         default: 'Blue',
 
@@ -55,18 +55,18 @@ const questions = [
     //prompt for text
     {
     
-        type: 'rawlist',
-        message: 'Please choose one of the following shapes',
+        type: 'input',
+        message: 'Please type in text to go inside shape. Text can only have up to three letters',
         name: 'shapePrompt',
-        default: 'Circle',
+        default: 'SVG',
 
     }, 
 
     //prompt for textColor
     {
     
-        type: 'rawlist',
-        message: 'Please choose one of the following shapes',
+        type: 'input',
+        message: 'Please type a color or paste an RBG code for your text',
         name: 'shapePrompt',
         default: 'Circle',
 
