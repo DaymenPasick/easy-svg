@@ -62,6 +62,9 @@ const questions = [
 
 const init = () => {
  prompt(questions)
+ .then(data => {
+    console.log(data);
+ })
 }
 
 // init()
