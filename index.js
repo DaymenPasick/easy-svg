@@ -6,6 +6,7 @@
 const { readFile, writeFile} = require('fs/promises');
 const inquirer = require('inquirer')
 const shapeCreator = require('./lib/data/shapeCreator')
+const generateSVG = require('./lib/utils/generateSVG')
 
 
 //prompt system (may need to move this onto another file)
@@ -62,9 +63,9 @@ const questions = [
 
 const init = () => {
  prompt(questions)
- .then(data => {
-    console.log(data);
- })
+//  .then(data => {
+//     console.log(data);
+//  })
 }
 
 // init()
