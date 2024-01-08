@@ -6,3 +6,7 @@
 const { readFile, writeFile} = require('fs/promises');
 
 
+//brainstorm notes.
+//we need to give user prompt for desired shape,
+// validate that prompt result,
+// then pass it into some sort of functionality that will determine the making of a triangle, circle, or square class.
