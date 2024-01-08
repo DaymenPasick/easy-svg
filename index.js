@@ -11,6 +11,7 @@ const generateSVG = require('./lib/utils/generateSVG')
 
 const validateTextResponse = generateSVG.validateTextResponse
 const validateShapeResponse = generateSVG.validateShapeResponse
+const createSelectedShape = generateSVG.createSelectedShape
 
 
 //prompt system (may need to move this onto another file)
@@ -78,6 +79,11 @@ const init = () => {
     //will validate shapePrompt for proper shape choice, and return shape response in lowercase letters
     const validatedShapeResponse = validateShapeResponse(data.shapePrompt)
     console.log("Your logo shape is: " + validatedShapeResponse);
+
+    //will create new shape class based of response. Class will be made from
+    //shape classes within shapeCreator.js
+    const createShape = createSelectedShape(validatedShapeResponse)
+    console.log(createShape);
 
  })
 }
