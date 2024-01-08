@@ -72,7 +72,9 @@ const init = () => {
     console.log(data);
 
     //will make sure textPrompt is between 1-3 letters
+    //will also turn response to all CAPS
     validateTextResponse(data.textPrompt)
+    console.log(validateTextResponse(data.textPrompt));
  })
 }
 
