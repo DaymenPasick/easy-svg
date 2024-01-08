@@ -76,10 +76,8 @@ const init = () => {
     console.log("Shape text will be: " + validatedTextResponse);
 
     //will validate shapePrompt for proper shape choice, and return shape response in lowercase letters
-    
-
-
-
+    const validatedShapeResponse = validateShapeResponse(data.shapePrompt)
+    console.log("Your logo shape is: " + validatedShapeResponse);
 
  })
 }
