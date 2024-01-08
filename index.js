@@ -38,7 +38,11 @@ const questions = [
         type: 'rawlist',
         message: 'Please choose one of the following shapes',
         name: 'shapePrompt',
-        default: 'Circle',
+        choices: [
+            'Circle', 
+            'Square', 
+            'Triangle'
+        ]
 
     },    
 
@@ -57,7 +61,7 @@ const questions = [
     
         type: 'input',
         message: 'Please type in text to go inside shape. Text can only have up to three letters',
-        name: 'shapePrompt',
+        name: 'textPrompt',
         default: 'SVG',
 
     }, 
@@ -67,8 +71,8 @@ const questions = [
     
         type: 'input',
         message: 'Please type a color or paste an RBG code for your text',
-        name: 'shapePrompt',
-        default: 'Circle',
+        name: 'textColorPrompt',
+        default: 'White',
 
     }, 
 
