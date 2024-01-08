@@ -12,7 +12,7 @@ const renderShapeResponse = shapeCreator.renderShapeResponse
 
 const triangle = renderShapeResponse('triangle')
 
-console.log(triangle);
+console.log(renderShapeResponse('triangle'));
 
 
 //brainstorm notes.
