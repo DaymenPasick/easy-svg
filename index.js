@@ -24,3 +24,5 @@ console.log(triangle);
 //need to work on prompt for user
 //need to pass prompt data into variables
 //need to use these variables to trigger function that will make a specific shape accordingly
+
+//prompt system (may need to move this onto another file)
