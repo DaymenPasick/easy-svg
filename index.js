@@ -19,3 +19,5 @@ console.log(triangle);
 //I have a way to handle shapePrompt user input
 //now I need to create the actual terminal prompt for to get shapePrompt data back
 //once prompt created, need to tranfer that data into shapePrompt
+
+//might also create seperate js file for validation functions
