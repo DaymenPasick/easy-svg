@@ -41,10 +41,36 @@ const questions = [
         default: 'Circle',
 
     },    
-    //prompt for shapeColor
-    //prompt for text
-    //prompt for textColor
 
+    //prompt for shapeColor
+    {
+    
+        type: 'rawlist',
+        message: 'Please type a color or paste color RBG code',
+        name: 'shapeColorPrompt',
+        default: 'Blue',
+
+    }, 
+
+    //prompt for text
+    {
+    
+        type: 'rawlist',
+        message: 'Please choose one of the following shapes',
+        name: 'shapePrompt',
+        default: 'Circle',
+
+    }, 
+
+    //prompt for textColor
+    {
+    
+        type: 'rawlist',
+        message: 'Please choose one of the following shapes',
+        name: 'shapePrompt',
+        default: 'Circle',
+
+    }, 
 
 ]
 
