@@ -68,12 +68,16 @@ const questions = [
 const init = () => {
  prompt(questions)
  .then(data => {
+    
     console.log(data);
+
+    //will make sure textPrompt is between 1-3 letters
+    validateTextResponse(data.textPrompt)
  })
 }
 
-// init()
+init()
 
 module.exports = {
-    init
+    // init
 }
