@@ -4,6 +4,7 @@
 //setting const to utilize fs promises api.
 //this will support writing/reading of files and easier validation of data
 const { readFile, writeFile} = require('fs/promises');
+const inquirer = require('inquirer')
 const shapeCreator = require('./lib/data/shapeCreator')
 
 const Shape = shapeCreator.Shape
@@ -26,3 +27,10 @@ console.log(triangle);
 //need to use these variables to trigger function that will make a specific shape accordingly
 
 //prompt system (may need to move this onto another file)
+const prompt = inquirer.createPromptModule();
+
+const questions = [
+
+
+    
+]
