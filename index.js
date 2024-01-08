@@ -32,13 +32,13 @@ const prompt = inquirer.createPromptModule();
 //will be the terminal prompts for the user to answer
 const questions = [
 
-    //prompt for shape
+    //prompt for shape: gives option for Circle, Square, or Triangle
     {
     
         type: 'rawlist',
-        message: 'rawlist',
-        type: 'rawlist',
-        type: 'rawlist',
+        message: 'Please choose one of the following shapes',
+        name: 'shapePrompt',
+        default: 'Circle',
 
     },    
     //prompt for shapeColor
@@ -47,3 +47,9 @@ const questions = [
 
 
 ]
+
+const init = () => {
+ prompt(questions)
+}
+
+init()
