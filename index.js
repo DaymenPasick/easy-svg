@@ -12,6 +12,7 @@ const generateSVG = require('./lib/utils/generateSVG')
 const validateTextResponse = generateSVG.validateTextResponse
 const validateShapeResponse = generateSVG.validateShapeResponse
 const createSelectedShape = generateSVG.createSelectedShape
+const validateShapeColor = generateSVG.validateShapeColor
 
 
 //prompt system (may need to move this onto another file)
@@ -78,6 +79,8 @@ const init = () => {
     console.log("Your logo shape is: " + validatedShapeResponse);
 
     //will validate color/rgb data from shapeColorPrompt
+    const validatedShapeColor = validateShapeColor(data.shapeColorPrompt)
+    console.log(validateShapeColor);
 
     //will make sure textPrompt is between 1-3 letters, only contains letters & will CAPS response
     const validatedTextResponse = validateTextResponse(data.textPrompt)
