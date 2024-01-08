@@ -78,19 +78,11 @@ const init = () => {
     const validatedShapeResponse = validateShapeResponse(data.shapePrompt)
     console.log("Your logo shape is: " + validatedShapeResponse);
 
-    //will validate color/rgb data from shapeColorPrompt
-    const validatedShapeColor = validateShapeColor(data.shapeColorPrompt)
-    console.log(validateShapeColor);
-
+  
     //will make sure textPrompt is between 1-3 letters, only contains letters & will CAPS response
     const validatedTextResponse = validateTextResponse(data.textPrompt)
     console.log("Shape text will be: " + validatedTextResponse);
 
-    //will validate color/rgb data from textColorPrompt
-
-
-
-    
 
     //will create new shape class based of response. Class will be made from
     //shape classes within shapeCreator.js
