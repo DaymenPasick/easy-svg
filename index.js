@@ -97,7 +97,15 @@ const init = () => {
     const generatedShape = createSelectedShape(validatedShapeResponse)
     console.log(generatedShape);
 
-    
+
+    populateShape()
+
+    function populateShape() {
+        const populatedShape = new generatedShape(validatedShapeColor,
+                                                  validatedTextResponse,
+                                                  validatedTextColor)
+        console.log(populatedShape);
+    }
 
  })
 }
