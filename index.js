@@ -97,15 +97,20 @@ const init = () => {
     const generatedShape = createSelectedShape(validatedShapeResponse)
     console.log(generatedShape);
 
+    
+
  })
 }
 
-//will take all of the validated terminal prompt responses and create a logo
-//for rendering
-function createLogo(generatedShape, validatedShapeResponse, validatedShapeColor,
-                    validatedTextResponse, validatedTextColor) {
+// //will take all of the validated terminal prompt responses and create a logo
+// //for rendering
+// function createLogo(generatedShape, validatedShapeResponse, validatedShapeColor,
+//                     validatedTextResponse, validatedTextColor) {
+    
+//     return  createdLogo = new generatedShape()
+    
 
-}
+// }
 
 
 init()
