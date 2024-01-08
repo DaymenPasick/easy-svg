@@ -1,5 +1,6 @@
 //inquires and requires
 const { readFile, writeFile} = require('fs/promises');
+const fs = require('fs');
 const inquirer = require('inquirer')
 const shapeCreator = require('./lib/data/shapeCreator')
 const generateSVG = require('./lib/utils/generateSVG');
@@ -107,12 +108,17 @@ const init = () => {
 
    //need to make code that will make .SVGfile
    //need to make code that will take populatedShape and populate it into svg logo
-function writeToFile(filename, data){
+    function writeToFile(filename, populatedShape){
 
-    const genSVG = generateSvgLogo
+        const genSVG = generateSvgLogo(populatedShape)
 
+        if(!fs.existsSync('./output')) {
+            fs.mkdirSync('./output')
+        }
 
-}
+    }
+
+    writeToFile("logo.svg", populatedShape)
 
  })
 }
