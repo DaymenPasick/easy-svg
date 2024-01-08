@@ -12,7 +12,6 @@ const generateSVG = require('./lib/utils/generateSVG')
 const validateTextResponse = generateSVG.validateTextResponse
 const validateShapeResponse = generateSVG.validateShapeResponse
 const createSelectedShape = generateSVG.createSelectedShape
-const validateShapeColor = generateSVG.validateShapeColor
 
 
 //prompt system (may need to move this onto another file)
@@ -39,9 +38,9 @@ const questions = [
     {
     
         type: 'input',
-        message: 'Please type a color or paste an RBG code for your shape',
+        message: 'Please type a color or paste a hex value for your shape',
         name: 'shapeColorPrompt',
-        default: 'Blue',
+        validate: (value) => !!value.trim() || 'Please choose a color or hex value',
 
     }, 
 
@@ -59,9 +58,9 @@ const questions = [
     {
     
         type: 'input',
-        message: 'Please type a color or paste an RBG code for your text',
+        message: 'Please type a color or paste a hex value for your text',
         name: 'textColorPrompt',
-        default: 'White',
+        validate: (value) => !!value.trim() || 'Please choose a color or hex value',
 
     }, 
 
@@ -88,8 +87,6 @@ const init = () => {
     //shape classes within shapeCreator.js
     const createShape = createSelectedShape(validatedShapeResponse)
     console.log(createShape);
-
-
  })
 }
 
