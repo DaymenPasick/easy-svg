@@ -21,8 +21,6 @@ console.log(triangle);
 //might also create seperate js file for validation functions
 
 //notes for tommorow
-//made initial(hopefully final)tests for base Shape class and extends
-//need to work on prompt for user
 //need to pass prompt data into variables
 //need to use these variables to trigger function that will make a specific shape accordingly
 
