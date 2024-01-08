@@ -1,15 +1,11 @@
-//this index file will hold code for actually invoking the svg render process
-//after the initial code is all done
-
-//setting const to utilize fs promises api.
-//this will support writing/reading of files and easier validation of data
+//inquires and requires
 const { readFile, writeFile} = require('fs/promises');
 const inquirer = require('inquirer')
 const shapeCreator = require('./lib/data/shapeCreator')
 const generateSVG = require('./lib/utils/generateSVG');
-const { log } = require('console');
 
 
+//const functions imported from generateSVG.js
 const validateTextResponse = generateSVG.validateTextResponse
 const validateShapeResponse = generateSVG.validateShapeResponse
 const createSelectedShape = generateSVG.createSelectedShape
@@ -68,11 +64,11 @@ const questions = [
 ]
 
 
+//function to take in user terminal prompt answers and generate a populated
+//shape class
 const init = () => {
  prompt(questions)
  .then(data => {
-    
-    console.log(data);
 
     //will validate shapePrompt for proper shape choice, and return shape response in lowercase letters
     const validatedShapeResponse = validateShapeResponse(data.shapePrompt)
@@ -92,33 +88,30 @@ const init = () => {
 
 
 
+
     //will create new shape class based of response. Class will be made from
     //shape classes within shapeCreator.js
     const generatedShape = createSelectedShape(validatedShapeResponse)
     console.log(generatedShape);
 
 
-    populateShape()
 
+    
+    //will handle all above validated prompt answers and populate
+    //a dynamically generated shape class
     function populateShape() {
         const populatedShape = new generatedShape(validatedShapeColor,
                                                   validatedTextResponse,
                                                   validatedTextColor)
-        console.log(populatedShape);
+        return populatedShape
     }
 
+
+   const populatedShape = populateShape()
+
+   console.log(populatedShape);
  })
 }
-
-// //will take all of the validated terminal prompt responses and create a logo
-// //for rendering
-// function createLogo(generatedShape, validatedShapeResponse, validatedShapeColor,
-//                     validatedTextResponse, validatedTextColor) {
-    
-//     return  createdLogo = new generatedShape()
-    
-
-// }
 
 
 init()
