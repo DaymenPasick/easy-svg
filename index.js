@@ -6,7 +6,8 @@
 const { readFile, writeFile} = require('fs/promises');
 const inquirer = require('inquirer')
 const shapeCreator = require('./lib/data/shapeCreator')
-const generateSVG = require('./lib/utils/generateSVG')
+const generateSVG = require('./lib/utils/generateSVG');
+const { log } = require('console');
 
 
 const validateTextResponse = generateSVG.validateTextResponse
@@ -77,16 +78,24 @@ const init = () => {
     const validatedShapeResponse = validateShapeResponse(data.shapePrompt)
     console.log("Your logo shape is: " + validatedShapeResponse);
 
-  
+    //validated value return from shapeColorPrompt
+    const validatedShapeColor = data.shapeColorPrompt
+    console.log("Your logo color will be: " + validatedShapeColor);
+
     //will make sure textPrompt is between 1-3 letters, only contains letters & will CAPS response
     const validatedTextResponse = validateTextResponse(data.textPrompt)
-    console.log("Shape text will be: " + validatedTextResponse);
+    console.log("Your logo text will be: " + validatedTextResponse);
+
+    //validated value return from textColorPrompt
+    const validatedTextColor = data.textColorPrompt
+    console.log("Your text color will be: " + validatedTextColor);
 
 
+    
     //will create new shape class based of response. Class will be made from
     //shape classes within shapeCreator.js
-    const createShape = createSelectedShape(validatedShapeResponse)
-    console.log(createShape);
+    const generatedShape = createSelectedShape(validatedShapeResponse)
+    console.log(generatedShape);
  })
 }
 
