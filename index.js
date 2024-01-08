@@ -7,22 +7,6 @@ const { readFile, writeFile} = require('fs/promises');
 const inquirer = require('inquirer')
 const shapeCreator = require('./lib/data/shapeCreator')
 
-// const Shape = shapeCreator.Shape
-
-// const renderShapeResponse = shapeCreator.renderShapeResponse
-
-// const triangle = renderShapeResponse('triangle')
-
-// console.log(triangle);
-
-
-//brainstorm notes.
-
-//might also create seperate js file for validation functions
-
-//notes for tommorow
-//need to pass prompt data into variables
-//need to use these variables to trigger function that will make a specific shape accordingly
 
 //prompt system (may need to move this onto another file)
 const prompt = inquirer.createPromptModule();
