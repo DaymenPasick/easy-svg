@@ -29,8 +29,21 @@ console.log(triangle);
 //prompt system (may need to move this onto another file)
 const prompt = inquirer.createPromptModule();
 
+//will be the terminal prompts for the user to answer
 const questions = [
 
-
+    //prompt for shape
+    {
     
+        type: 'rawlist',
+        message: 'rawlist',
+        type: 'rawlist',
+        type: 'rawlist',
+
+    },    
+    //prompt for shapeColor
+    //prompt for text
+    //prompt for textColor
+
+
 ]
