@@ -6,6 +6,14 @@
 const { readFile, writeFile} = require('fs/promises');
 const shapeCreator = require('./lib/data/shapeCreator')
 
+const Shape = shapeCreator.Shape
+
+const renderShapeResponse = shapeCreator.renderShapeResponse
+
+const triangle = renderShapeResponse('triangle')
+
+console.log(triangle);
+
 
 //brainstorm notes.
 //I have a way to handle shapePrompt user input
