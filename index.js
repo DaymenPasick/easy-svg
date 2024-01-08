@@ -9,6 +9,7 @@ const generateSVG = require('./lib/utils/generateSVG');
 const validateTextResponse = generateSVG.validateTextResponse
 const validateShapeResponse = generateSVG.validateShapeResponse
 const createSelectedShape = generateSVG.createSelectedShape
+const generateSvgLogo = generateSVG.generateSvgLogo
 
 
 //prompt system (may need to move this onto another file)
@@ -106,7 +107,12 @@ const init = () => {
 
    //need to make code that will make .SVGfile
    //need to make code that will take populatedShape and populate it into svg logo
-function writeToFile()
+function writeToFile(filename, data){
+
+    const genSVG = generateSvgLogo
+
+
+}
 
  })
 }
