@@ -116,7 +116,18 @@ const init = () => {
             fs.mkdirSync('./output')
         }
 
+
+
+        fs.writeFileSync('./output/logo.svg', genSVG, err =>{
+            if(err){
+                console.error(err);
+            }
+
+        })
+
     }
+    
+
 
     writeToFile("logo.svg", populatedShape)
 
