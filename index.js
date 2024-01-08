@@ -9,6 +9,10 @@ const shapeCreator = require('./lib/data/shapeCreator')
 const generateSVG = require('./lib/utils/generateSVG')
 
 
+const validateTextResponse = generateSVG.validateTextResponse
+const validateShapeResponse = generateSVG.validateShapeResponse
+
+
 //prompt system (may need to move this onto another file)
 const prompt = inquirer.createPromptModule();
 
@@ -63,9 +67,9 @@ const questions = [
 
 const init = () => {
  prompt(questions)
-//  .then(data => {
-//     console.log(data);
-//  })
+ .then(data => {
+    console.log(data);
+ })
 }
 
 // init()
