@@ -103,6 +103,11 @@ const init = () => {
    const populatedShape = populateEmptyShape()
 
    console.log(populatedShape);
+
+   //need to make code that will make .SVGfile
+   //need to make code that will take populatedShape and populate it into svg logo
+
+   
  })
 }
 
