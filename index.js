@@ -72,34 +72,27 @@ const init = () => {
 
     //will validate shapePrompt for proper shape choice, and return shape response in lowercase letters
     const validatedShapeResponse = validateShapeResponse(data.shapePrompt)
-    console.log("Your logo shape is: " + validatedShapeResponse);
 
     //validated value return from shapeColorPrompt
     const validatedShapeColor = data.shapeColorPrompt
-    console.log("Your logo color will be: " + validatedShapeColor);
 
     //will make sure textPrompt is between 1-3 letters, only contains letters & will CAPS response
     const validatedTextResponse = validateTextResponse(data.textPrompt)
-    console.log("Your logo text will be: " + validatedTextResponse);
 
     //validated value return from textColorPrompt
     const validatedTextColor = data.textColorPrompt
-    console.log("Your text color will be: " + validatedTextColor);
-
-
+   
 
 
     //will create new shape class based of response. Class will be made from
     //shape classes within shapeCreator.js
     const generatedShape = createSelectedShape(validatedShapeResponse)
-    console.log(generatedShape);
-
 
 
     
     //will handle all above validated prompt answers and populate
     //a dynamically generated shape class
-    function populateShape() {
+    function populateEmptyShape() {
         const populatedShape = new generatedShape(validatedShapeColor,
                                                   validatedTextResponse,
                                                   validatedTextColor)
@@ -107,7 +100,7 @@ const init = () => {
     }
 
 
-   const populatedShape = populateShape()
+   const populatedShape = populateEmptyShape()
 
    console.log(populatedShape);
  })
