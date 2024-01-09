@@ -127,6 +127,7 @@ const init = () => {
 
     //will call function
     writeToFile("logo.svg", populatedShape)
+    console.log("Generated logo.svg");
  })
 }
 
