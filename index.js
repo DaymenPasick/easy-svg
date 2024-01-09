@@ -102,8 +102,6 @@ const init = () => {
 
    const populatedShape = populateEmptyShape()
 
-   console.log(populatedShape);
-
    //function will take validated prompt answers and create a logo.svg file
     function writeToFile(filename, populatedShape){
 
