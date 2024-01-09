@@ -1,8 +1,0 @@
-<!-- This will show the triangle being used as a guide for this project -->
-<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-
-  <polygon points="120,10 250,200 0,210"  fill="green" />
-
-  <text x="124" y="150" font-size="60" text-anchor="middle" fill="white">SVG</text>
-
-</svg>
