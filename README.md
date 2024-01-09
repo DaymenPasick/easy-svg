@@ -13,7 +13,7 @@ A program that will allow you to quickly generate an SVG shape
 ## Usage
 
 - Click on the following link to watch a "How To" video guide!:
- (https://www.awesomescreenshot.com/video/23872555?key=9579ecb7aba7f5de4a69e4e7347e5c86)
+ (https://www.awesomescreenshot.com/video/23872707?key=421430003d13cb6f69ebef32ce188c34)
 
    
 - Terminal prompts to populate your newREADME
