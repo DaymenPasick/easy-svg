@@ -1,12 +1,9 @@
 # easy-svg
 A program that will allow you to quickly generate an SVG shape
-# README-creator
-- A quick way to generate a quality README by answering a few questions
-
 
 ## Description
 
-- This app allows the user to dynamically generate their own professional README by just entering a few questions!
+- This app allows the user to quickly and dynamically generate a logo
 
 
 ## Installation
@@ -20,11 +17,11 @@ A program that will allow you to quickly generate an SVG shape
 
    
 - Terminal prompts to populate your newREADME
-    ![Sample README](./assets/imgs/terminalPromptsForREADME.png)   
+    ![Sample README](./assets/imgs/easySVGTerminalPrompt.png)   
    
    
 - Generated newREADME sample
-    ![Sample README](./assets/imgs/sampleGeneratedREADME.png)
+    ![Sample SVG Logo](./assets/imgs/logo.svg)
     
 
 
